@@ -14,7 +14,7 @@ header{
      margin: 0 auto;  
 }
 .logo{
-    width: 100px;
+    max-width: 100px;
     text-align: center;
 }
 .logo-branding{
