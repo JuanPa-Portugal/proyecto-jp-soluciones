@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+header{
+    border: 2px solid black;
+    /* background-image: url(/img/Vector-nav.png); */
+}
+.container{
+    max-width: 1200px;
+    border: 1px solid red;
+    display: flex;
+    justify-content:space-between;
+     margin: 0 auto;  
+}
+.logo{
+    width: 100px;
+    text-align: center;
+}
+.logo-branding{
+    max-width: 100%; 
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
