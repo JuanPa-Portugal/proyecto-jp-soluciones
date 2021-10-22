@@ -1,26 +1,79 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+</style>
+
+
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
-header{
-    border: 2px solid black;
-    /* background-image: url(/img/Vector-nav.png); */
+.bg{
+    width: 100%;
+    height: 150px;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    transition: all 300ms;
+    
 }
-.container{
-    max-width: 1200px;
-    border: 1px solid red;
-    display: flex;
-    justify-content:space-between;
-     margin: 0 auto;  
-}
-.logo{
-    max-width: 100px;
-    text-align: center;
-}
-.logo-branding{
-    max-width: 100%; 
-}
-.menu{
+.container__all{
+    max-width:1200px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    margin: auto;
+    padding: 0 20px;
+    
+}
+ header .logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .logo img{
+    width: 100px;
+}
+.container__nav{
+     position: relative;
+     height: 100%;
+    
+}
+nav{
+    height: 100%
+}
+.menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li {
+    margin:0 20px;
+    list-style: none;
+}
+.menu li a{
+    font-size: 16px;
+    text-decoration: none;
+}
+.select{
+    background: #359ef9;
+    padding: 10px 30px;
+    color: white;
+}
+
+/* cover */
+.cover{
+    padding-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 150px;
+    background: blue;
+}
+.cover h1{
+    max-width: 55%;
+    font-size: 54px;
+    font-weight: 700;
 }
