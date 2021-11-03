@@ -354,17 +354,19 @@
   transition: all 550ms;
 }
 .card-content .btn1:hover {
-  border-color: white;
+  border-color: rgb(32, 66, 131);
   color: white;
   background: #113399;
 }
 .card-content .btn2:hover {
-  border-color: white;
+  border-color: rgb(209, 37, 88);
   color: white;
   background: #ca236e;
 }
 .card-content .btn3:hover {
+    border-color: rgb(25, 42, 189);
   background: #49a0fc;
+  color: white;
 }
 .div{   
     width: 10%;
@@ -439,7 +441,7 @@
 }
 /* footer */
 footer{
-    background: #113399;
+    background:  rgb(32, 66, 131);;
 }
 .menu-footer{
     font-size: 20px;
