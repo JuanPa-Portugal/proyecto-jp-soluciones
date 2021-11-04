@@ -6,9 +6,9 @@
   margin: 0;
 }
 .container-all {
+  border: 1px solid black;
   max-width: 1600px;
   margin: 0 auto;
-  background-color: #ffffff;
 }
 .container {
   display: flex;
@@ -17,15 +17,10 @@
   margin: 0 auto;
   justify-content: space-between;
 }
-.container-hero {
-  background-image: url(img/back-G-hero.svg);
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  height: 600px;
-}
 .container-header {
-  background-color: rgba(29, 55, 202, 0.048);
+  background-image: url(img/weave-nav.svg);
+  background-size: cover;
+background-position:100%vmax;
 }
 .logo {
   display: flex;
@@ -61,18 +56,31 @@
   padding: 10px 30px;
   border-radius: 5px;
 }
-/*hero*/
-.hero {
-  height: 470px;
+.container-hero{
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  position: relative;
+  border-top:2px solid rgba(76, 0, 255, 0.87);
+  justify-content:space-evenly;
+  background: #0F2027;  
+  background: -webkit-linear-gradient(to right, hsla(197, 38%, 28%, 0.698), hsla(195, 35%, 19%, 0.452), hsla(198, 44%, 11%, 0.445)),url(img/AdobeStock_396712760.jpeg);  
+  background: linear-gradient(to right, hsla(197, 38%, 28%, 0.698), hsla(195, 35%, 19%, 0.452), hsla(198, 44%, 11%, 0.445)),url(img/AdobeStock_396712760.jpeg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin-bottom: 60px;
+} 
+.weave-hero{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .hero-info {
-  max-width: 60%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+  max-width: 50%;
 }
 .hero-info h2 {
   color: white;
@@ -82,15 +90,14 @@
   margin-bottom: 30px;
 }
 .hero-info p {
-  color: white;
+  color: rgb(223, 209, 209);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  font-weight: 300;
-  padding: 0 150px 0 0;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 .hero-btn {
-  align-self: center;
+  align-self:flex-start;
   width: 250px;
   text-decoration: none;
   color: rgb(245, 239, 239);
@@ -104,49 +111,33 @@
   text-align: center;
 }
 .hero-btn:hover {
-  background-color: #f37010;
+  background-color: hsla(283, 62%, 47%, 0.644);
 }
-.hero-vector {
-  max-width: 40%;
-  display: flex;
-}
-.hero-vector img {
-  max-width: 100%;
-}
-
-/* section 1 */
 
 .pain-points {
   display: grid;
-  flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
-  height: 300px;
-  align-items: flex-start;
-  margin: 60px 0;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 .pain-point--title {
-  display: flex;
-  flex-direction: column;
   font-size: 45px;
   font-family: "Raleway", sans-serif;
   font-weight: 800px;
   color: #1f2744;
   padding-right: 50px;
 }
-.pain-point--title div {
-  border: 1px solid #f37010;
-  width: 70%;
-  align-self: flex-end;
-}
+
 .pain-point--paragrahp {
   display: flex;
   flex-direction: column;
   max-width: 90%;
+  min-width: 50%;
   color: #484f6b;
   font-size: 16px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
-  align-self: flex-end;
+  align-self:center;
 }
 .pain-point--paragrahp div {
   display: flex;
@@ -167,15 +158,15 @@
 /* about me */
 .about-me {
   display: flex;
-  flex-wrap: wrap;
+  justify-content:space-evenly;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.418);
   margin-bottom: 60px;
-  justify-content: center;
 }
 .perfil-img {
-  width: 300px;
+  margin: 0 auto;
+  max-width: 100%;
 }
 .perfil-img img {
   max-width: 100%;
@@ -204,6 +195,7 @@
   font-family: "Raleway", sans-serif;
   margin-bottom: 10px;
   font-size: 16px;
+  line-height: 25px;
   font-weight: 400;
   color: #484f6b;
 }
@@ -365,26 +357,28 @@
 /* article */
 
 .article-container {
+  display: flex;
+  width: 100%;
   height: 300px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   background: #00c6ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #0072ff,
     #00c6ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #0072ff,
     #00c6ff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .article-container h3 {
+  padding: 10px;
   margin-bottom: 20px;
   text-align: center;
   color: white;
