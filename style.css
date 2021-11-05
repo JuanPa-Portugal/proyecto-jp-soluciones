@@ -97,15 +97,16 @@ background-position:100%vmax;
   margin-bottom: 20px;
 }
 .hero-btn {
+  margin: 10px;;
   align-self:flex-start;
-  width: 250px;
+  width:50%;
   text-decoration: none;
   color: rgb(245, 239, 239);
   background-color: #113399;
   padding: 8px;
   border: 2px solid white;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -465,139 +466,35 @@ footer {
 }
 
 /* font-family: 'Raleway', sans-serif; */
-/*  
 
-
-
-
-
-
-
-
-
-
-
-.bg{
-    width: 100%;
-    height: 150px;
-    font-family: 'Poppins', sans-serif;
-    position: fixed;
-    top: 0;
-    right: 0;
-    /* z-index: 100; 
-    transition: all 300ms;
-    background-image: url(/img/wheader.svg);
-    background-position-y:150px;
-    
-}
-.container{
-    border: 1px solid blue;
-    max-width:90%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 20px; 
-}
-.logo{
-    height: 100%;
-    display: flex;
-    justify-content: center;
+@media(max-width : 768px){
+  .container-hero{
+    flex-direction: column;
+    height: 450px;
+  }
+  .nav{
+    display: none;
+  }
+  .hero-vector{
+    display: none;
+  }
+  .hero-info{
     align-items: center;
+    max-width: 100%;
+  }
+ .hero-info p{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
  }
- .logo__branding{
-    width: 100px;
-}
-.nav{
-     position: relative;
-     height: 100%;
-    
-}
-nav{
-    height: 100%
-}
-.menu{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menu li {
-    margin:0 20px;
-    list-style: none;
-}
-.menu li a{
-    font-size: 16px;
-    text-decoration: none;
-    color: blanchedalmond;
-}
-.select{
-    background:#D28A34;
-    padding: 10px 30px;
-    color: white;
-}
-
-/* section-hero
-
-.hero{
-    /* background-image: url(/img/weave-hero.svg);
-    background-size: cover;
-    background-position: left; 
-    font-family: 'Poppins', sans-serif;
-    margin-top: 150px;
-    border: 1px solid red;
-    height:500px;
-}
-.container__info{
-    max-width: 50%;
-    border: 1px solid green; 
-    text-align:left;
-    margin-top: 10px;
-}
-.container__info h1{
-    font-size: 48px;
-    margin-bottom: 30px;
-}
-.container__info p{
-    font-size: 16px;
-    color:whitesmoke;
-}
-.container__info a{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    margin-top: 10%;
-    margin-left: 30%;
-    background-color: #08153bad;
-    padding: 10px;
-    border-radius: 20px;
-    border: 2px solid whitesmoke;
-}
-
-.container__vector img{
-    display: block;
-    margin: 41% 0 0 auto;
+ .hero-info h2{
+   text-align: center;
+   font-size: 30px;
+ }
+ .hero-btn {
+   font-size: 12px;
+   align-self: center;
+   
+ }
 
 }
-.info-title{
-    color: white;
-}
-.paragraph{
-    display: inline-block;
-    position: relative;
-    /* background-color: red; 
-}
-.paragraph::after, .paragraph::before{
-    content:"";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background-color: black;
-}
-.paragraph::before{
-    left: -120px;
-}
-.paragraph::after{
-    right: -140px;
-}
-*/
