@@ -20,7 +20,6 @@
 .container-header {
   background-image: url(img/weave-nav.svg);
   background-size: cover;
-background-position:100%vmax;
 }
 .logo {
   display: flex;
@@ -32,7 +31,7 @@ background-position:100%vmax;
   padding: 0 10px;
 }
 .logo--branding {
-  width: 100px;
+  width: 25%;
 }
 .nav {
   display: flex;
@@ -56,21 +55,33 @@ background-position:100%vmax;
   padding: 10px 30px;
   border-radius: 5px;
 }
-.container-hero{
+.container-hero {
   display: flex;
   position: relative;
-  border-top:2px solid rgba(76, 0, 255, 0.87);
-  justify-content:space-evenly;
-  background: #0F2027;  
-  background: -webkit-linear-gradient(to right, hsla(197, 38%, 28%, 0.698), hsla(195, 35%, 19%, 0.452), hsla(198, 44%, 11%, 0.445)),url(img/AdobeStock_396712760.jpeg);  
-  background: linear-gradient(to right, hsla(197, 38%, 28%, 0.698), hsla(195, 35%, 19%, 0.452), hsla(198, 44%, 11%, 0.445)),url(img/AdobeStock_396712760.jpeg); 
+  border-top: 2px solid rgba(76, 0, 255, 0.87);
+  justify-content: space-evenly;
+  background: #0f2027;
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(197, 38%, 28%, 0.698),
+      hsla(195, 35%, 19%, 0.452),
+      hsla(198, 44%, 11%, 0.445)
+    ),
+    url(img/AdobeStock_396712760.jpeg);
+  background: linear-gradient(
+      to right,
+      hsla(197, 38%, 28%, 0.698),
+      hsla(195, 35%, 19%, 0.452),
+      hsla(198, 44%, 11%, 0.445)
+    ),
+    url(img/AdobeStock_396712760.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   margin-bottom: 60px;
-} 
-.weave-hero{
+}
+.weave-hero {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -97,9 +108,9 @@ background-position:100%vmax;
   margin-bottom: 20px;
 }
 .hero-btn {
-  margin: 10px;;
-  align-self:flex-start;
-  width:50%;
+  margin: 10px;
+  align-self: flex-start;
+  width: 50%;
   text-decoration: none;
   color: rgb(245, 239, 239);
   background-color: #113399;
@@ -116,29 +127,25 @@ background-position:100%vmax;
 }
 
 .pain-points {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  flex-wrap: wrap;
+  display: flex;
+  justify-content:space-evenly;
   margin-bottom: 60px;
 }
 .pain-point--title {
   font-size: 45px;
   font-family: "Raleway", sans-serif;
-  font-weight: 800px;
   color: #1f2744;
-  padding-right: 50px;
+  padding-right: 15%;
 }
 
 .pain-point--paragrahp {
   display: flex;
   flex-direction: column;
-  max-width: 90%;
-  min-width: 50%;
   color: #484f6b;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
-  align-self:center;
+  align-self: center;
 }
 .pain-point--paragrahp div {
   display: flex;
@@ -159,37 +166,36 @@ background-position:100%vmax;
 /* about me */
 .about-me {
   display: flex;
-  justify-content:space-evenly;
+ 
+  justify-content: space-around;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.418);
   margin-bottom: 60px;
 }
 .perfil-img {
-  margin: 0 auto;
   max-width: 100%;
+  text-align: center;
 }
 .perfil-img img {
-  max-width: 100%;
+  max-width: 50%;
 }
 .about-me-histori {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 50%;
-}
-.about-me-histori h2 {
+}.about-me-histori h2,h3{
   font-family: "Raleway", sans-serif;
   margin-bottom: 10px;
-  font-size: 24px;
   font-weight: bold;
+}
+.about-me-histori h2 {
+  font-size: 24px;
   color: #1f2744;
 }
 .about-me-histori h3 {
-  font-family: "Raleway", sans-serif;
-  margin-bottom: 10px;
   font-size: 20px;
-  font-weight: bold;
   color: #484f6b;
 }
 .about-me-histori p {
@@ -225,9 +231,9 @@ background-position:100%vmax;
   width: 90%;
   font-family: "Raleway", sans-serif;
   margin-bottom: 10px;
-  padding: 5px;
-  border-radius: 10px;
-  font-size: 35px;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-size: 30px;
   font-weight: bold;
   color: rgb(224, 220, 220);
   background: #1488cc;
@@ -235,7 +241,6 @@ background-position:100%vmax;
   background: linear-gradient(to right, #2b32b2, #1488cc);
 }
 .container-card {
-  padding: 20px;
   padding-bottom: 60px;
   margin: 0 auto;
   display: flex;
@@ -246,7 +251,7 @@ background-position:100%vmax;
   color: #484f6b;
   width: 300px;
   position: relative;
-  margin: 20px;
+  margin: 0 10px;
   font-family: "Raleway", sans-serif;
   transition: all 300ms;
   border-radius: 20px;
@@ -360,23 +365,19 @@ background-position:100%vmax;
 .article-container {
   display: flex;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
+  max-height: 450px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
-  background: #00c6ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); 
+  background: #00c6ff; 
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
   background: linear-gradient(
     to right,
     #0072ff,
     #00c6ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  );
 }
 .article-container h3 {
   padding: 10px;
@@ -423,6 +424,9 @@ background-position:100%vmax;
 footer {
   background: rgb(32, 66, 131);
 }
+.logo-footer{
+  width: 70%;
+}
 .menu-footer {
   font-size: 20px;
   display: flex;
@@ -437,7 +441,7 @@ footer {
 .menu-footer li {
   padding: 5px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight:lighter;
 }
 .legal {
   display: flex;
@@ -453,7 +457,7 @@ footer {
 .legal li {
   padding: 5px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight:lighter;
 }
 .contact {
   color: white;
@@ -464,37 +468,96 @@ footer {
 .icons {
   margin: 20px;
 }
+.copy{
+ text-align: center;
+ color: white;
+ font-size: 8px;
+ background-color: hsla(237, 29%, 15%, 0.671);
+}
 
 /* font-family: 'Raleway', sans-serif; */
 
-@media(max-width : 768px){
-  .container-hero{
+@media (max-width: 768px) {
+  .container{
+    flex-direction: column;
+  }
+  .container-hero {
     flex-direction: column;
     height: 450px;
   }
-  .nav{
+  .nav {
     display: none;
   }
-  .hero-vector{
+  .hero-vector {
     display: none;
   }
-  .hero-info{
+  .hero-info {
     align-items: center;
     max-width: 100%;
   }
- .hero-info p{
-  text-align: center;
-  font-size: 14px;
-  font-weight: 300;
- }
- .hero-info h2{
-   text-align: center;
-   font-size: 30px;
- }
- .hero-btn {
-   font-size: 12px;
-   align-self: center;
-   
- }
+  .hero-info p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .hero-info h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .hero-btn {
+    font-size: 12px;
+    align-self: center;
+  }
+  .pain-points {
+    margin: 5px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pain-point--title {
+    padding: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .pain-point--paragrahp{
+    font-size: 15px;
+  }
+  .about-me-histori{
+    max-width: 100%;
+    align-items: center;
+  }
+  .subtitle{
+    font-size: 30px;
+  }
+  .card{
+    margin-bottom: 30px;
+  }
+  .article-container{
+    padding: 10px;
+  }
+  .article-container a {
+    font-size: 16px;
+    display:block;
+  }
+  .article-container p{
+  margin-bottom: 20px;
+  }
+ .logo-footer{
+  width: 30%;
+}
+.logo{
+  justify-content: center;
+  margin: 60px;
+}
+.menu-footer{
+  align-items: center;
+  margin-bottom: 15px;
+}
+.legal{
+  align-items: center;
+}
+.contact{
+  margin: 0 auto;
+}
 
 }
