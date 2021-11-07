@@ -6,9 +6,7 @@
   margin: 0;
 }
 .container-all {
-  border: 1px solid black;
-  max-width: 1600px;
-  margin: 0 auto;
+  max-width: 1800px;
 }
 .container {
   display: flex;
@@ -58,8 +56,8 @@
 .container-hero {
   display: flex;
   position: relative;
-  border-top: 2px solid rgba(76, 0, 255, 0.87);
-  justify-content: space-evenly;
+  border-top: 1px solid white;
+  justify-content:space-between;
   background: #0f2027;
   background: -webkit-linear-gradient(
       to right,
@@ -241,12 +239,13 @@
   background: linear-gradient(to right, #2b32b2, #1488cc);
 }
 .container-card {
-  padding-bottom: 60px;
   margin: 0 auto;
+  width: 80%;
   display: flex;
+  justify-content:space-between;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 60px;
+ 
 }
 .card {
   color: #484f6b;
@@ -268,6 +267,8 @@
 }
 .card h3 {
   color: rgb(224, 220, 220);
+  width: 200px;
+  margin: 0 auto;
   text-align: center;
   border-radius: 20px;
   background: #1488cc;
@@ -345,7 +346,7 @@
 .card-content .btn2:hover {
   border-color: rgb(209, 37, 88);
   color: white;
-  background: #ca236e;
+  background-color: #ca236e;
 }
 .card-content .btn3:hover {
   border-color: rgb(25, 42, 189);
@@ -424,6 +425,10 @@
 footer {
   background: rgb(32, 66, 131);
 }
+.footer-brand{
+  display: flex;
+  align-items: center;
+}
 .logo-footer{
   width: 70%;
 }
@@ -478,12 +483,23 @@ footer {
 /* font-family: 'Raleway', sans-serif; */
 
 @media (max-width: 768px) {
+  .logo{
+    flex-direction: column;
+    align-self: flex-start;
+  }
+  .logo h2{
+    display: none;
+  }
+  .logo img{
+    align-self: flex-start;
+  }
   .container{
     flex-direction: column;
   }
   .container-hero {
     flex-direction: column;
-    height: 450px;
+    height: 500px;
+    justify-content: center;
   }
   .nav {
     display: none;
@@ -500,7 +516,7 @@ footer {
     font-size: 14px;
     font-weight: 300;
   }
-  .hero-info h2 {
+  .hero-info h1 {
     text-align: center;
     font-size: 30px;
   }
@@ -551,7 +567,7 @@ footer {
  .logo-footer{
   width: 30%;
 }
-.logo{
+.footer-brand{
   justify-content: center;
   margin: 60px;
 }
