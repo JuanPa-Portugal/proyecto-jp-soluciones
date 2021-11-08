@@ -7,6 +7,7 @@
 }
 .container-all {
   max-width: 1800px;
+  font-family: 'Raleway', sans-serif; 
 }
 .container {
   display: flex;
@@ -78,6 +79,7 @@
   background-position: center;
   background-attachment: fixed;
   margin-bottom: 60px;
+  height: 600px;
 }
 .weave-hero {
   position: absolute;
@@ -120,10 +122,9 @@
   font-weight: 700;
   text-align: center;
 }
-.hero-btn:hover {
-  background-color: hsla(283, 62%, 47%, 0.644);
+.hero-btn:hover{
+  background: hsla(283, 62%, 47%, 0.644);
 }
-
 .pain-points {
   display: flex;
   justify-content:space-evenly;
@@ -239,19 +240,19 @@
   background: linear-gradient(to right, #2b32b2, #1488cc);
 }
 .container-card {
-  margin: 0 auto;
+  margin: auto;
   width: 80%;
   display: flex;
-  justify-content:space-between;
+  justify-content:center;
   flex-wrap: wrap;
   padding-bottom: 60px;
  
 }
 .card {
+  margin-top: 30px;
   color: #484f6b;
   width: 300px;
   position: relative;
-  margin: 0 10px;
   font-family: "Raleway", sans-serif;
   transition: all 300ms;
   border-radius: 20px;
@@ -439,6 +440,10 @@ footer {
   color: white;
   font-family: "Raleway", sans-serif;
 }
+.menu-footer a{
+  text-decoration: none;
+  color: white;
+}
 .menu-footer ul {
   list-style: none;
   padding: 20px;
@@ -453,6 +458,10 @@ footer {
   flex-direction: column;
   font-size: 20px;
   font-family: "Raleway", sans-serif;
+  color: white;
+}
+.legal a{
+  text-decoration: none;
   color: white;
 }
 .legal ul {
@@ -479,7 +488,105 @@ footer {
  font-size: 8px;
  background-color: hsla(237, 29%, 15%, 0.671);
 }
+/* stylos contacto */
+:root{
+  --colortextos:#49454567;
+}
+.form-container{
+  position: absolute;
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+h1{
+  text-align: center;
+  margin: 10px 0;
 
+}
+form{
+  background: #ffff;
+  color: rgb(54, 25, 187);
+  border-radius: 10px;
+  box-shadow: 0 0 6PX 0rgba(255, 255, 255, 0.8);
+  width: 50%;
+  padding: 10px 0;
+  
+}
+form .grupo{
+  position: relative;
+  margin: 45px;
+}
+input, textarea{
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--colortextos);
+  resize: none;
+}
+input:focus,textarea:focus{
+  outline: none;
+  color: rgb(94,93,93);
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+  position: absolute;
+  top: -14px;
+  font-size: 12px;
+  color: #2196f3;
+}
+label{
+  color: var(--colortextos);
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 18px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+.barra{
+  position: relative;
+  display: block;
+  width:100% ;
+}
+input:focus~.barra::before, textarea:focus~.barra::before{
+  width: 100%;
+}
+
+.barra::before{
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #6a82fb, #fc5d7d);
+  transition: 0.3s ease all;
+  left: 0;
+}
+
+button{
+  background: red;
+  display: block;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color:whitesmoke;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+}
 /* font-family: 'Raleway', sans-serif; */
 
 @media (max-width: 768px) {
@@ -582,4 +689,21 @@ footer {
   margin: 0 auto;
 }
 
+}
+
+
+@media screen and (max-width:910){
+  form{
+      width: 40%;
+  }
+}
+@media screen and (max-width:650){
+  form{
+      width: 60%;
+  }
+}
+@media screen and (max-width:450){
+  form{
+      width: 80%;
+  }
 }
