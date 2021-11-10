@@ -7,7 +7,7 @@
 }
 .container-all {
   max-width: 1800px;
-  font-family: 'Raleway', sans-serif; 
+  font-family: "Raleway", sans-serif;
 }
 .container {
   display: flex;
@@ -58,7 +58,7 @@
   display: flex;
   position: relative;
   border-top: 1px solid white;
-  justify-content:space-between;
+  justify-content: space-between;
   background: #0f2027;
   background: -webkit-linear-gradient(
       to right,
@@ -89,7 +89,6 @@
 .hero-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
   max-width: 50%;
 }
@@ -122,12 +121,12 @@
   font-weight: 700;
   text-align: center;
 }
-.hero-btn:hover{
+.hero-btn:hover {
   background: hsla(283, 62%, 47%, 0.644);
 }
 .pain-points {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   margin-bottom: 60px;
 }
 .pain-point--title {
@@ -165,7 +164,7 @@
 /* about me */
 .about-me {
   display: flex;
- 
+
   justify-content: space-around;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -184,7 +183,9 @@
   flex-direction: column;
   justify-content: center;
   max-width: 50%;
-}.about-me-histori h2,h3{
+}
+.about-me-histori h2,
+h3 {
   font-family: "Raleway", sans-serif;
   margin-bottom: 10px;
   font-weight: bold;
@@ -243,10 +244,9 @@
   margin: auto;
   width: 80%;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 60px;
- 
 }
 .card {
   margin-top: 30px;
@@ -373,13 +373,9 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  background: #00c6ff; 
+  background: #00c6ff;
   background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-  background: linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  );
+  background: linear-gradient(to right, #0072ff, #00c6ff);
 }
 .article-container h3 {
   padding: 10px;
@@ -426,11 +422,11 @@
 footer {
   background: rgb(32, 66, 131);
 }
-.footer-brand{
+.footer-brand {
   display: flex;
   align-items: center;
 }
-.logo-footer{
+.logo-footer {
   width: 70%;
 }
 .menu-footer {
@@ -440,7 +436,7 @@ footer {
   color: white;
   font-family: "Raleway", sans-serif;
 }
-.menu-footer a{
+.menu-footer a {
   text-decoration: none;
   color: white;
 }
@@ -451,7 +447,7 @@ footer {
 .menu-footer li {
   padding: 5px;
   font-size: 16px;
-  font-weight:lighter;
+  font-weight: lighter;
 }
 .legal {
   display: flex;
@@ -460,7 +456,7 @@ footer {
   font-family: "Raleway", sans-serif;
   color: white;
 }
-.legal a{
+.legal a {
   text-decoration: none;
   color: white;
 }
@@ -471,7 +467,7 @@ footer {
 .legal li {
   padding: 5px;
   font-size: 16px;
-  font-weight:lighter;
+  font-weight: lighter;
 }
 .contact {
   color: white;
@@ -482,46 +478,62 @@ footer {
 .icons {
   margin: 20px;
 }
-.copy{
- text-align: center;
- color: white;
- font-size: 8px;
- background-color: hsla(237, 29%, 15%, 0.671);
+.copy {
+  text-align: center;
+  color: white;
+  font-size: 8px;
+  background-color: hsla(237, 29%, 15%, 0.671);
 }
 /* stylos contacto */
-:root{
-  --colortextos:#49454567;
+:root {
+  --colortextos: #ffffff67;
 }
-.form-container{
+.info-contactos{
+  position: absolute;
+  text-align:center;
+  top: 15%;
+  max-width: 50%;
+  color: white;
+}
+.info-contactos p{
+  font-size: 22px;
+}
+.info-contactos h3{
+  font-weight: 300;
+}
+.info-contactos h1{
+  font-size: 45px;
+}
+.form-container {
   position: absolute;
   width: 50%;
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 50%;
-  top: 50%;
+  left:70%;
+  top: 60%;
   transform: translate(-50%, -50%);
 }
-h1{
-  text-align: center;
-  margin: 10px 0;
 
-}
-form{
-  background: #ffff;
-  color: rgb(54, 25, 187);
+form {
+  background: rgba(6, 33, 59, 0.411);
+  color: rgb(144, 136, 185);
   border-radius: 10px;
-  box-shadow: 0 0 6PX 0rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 6px 0rgba (255, 255, 255, 0.8);
   width: 50%;
   padding: 10px 0;
-  
 }
-form .grupo{
+.form h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+form .grupo {
   position: relative;
   margin: 45px;
 }
-input, textarea{
+input,
+textarea {
   background: none;
   color: #c6c6c6;
   font-size: 18px;
@@ -532,21 +544,22 @@ input, textarea{
   border-bottom: 1px solid var(--colortextos);
   resize: none;
 }
-input:focus,textarea:focus{
+input:focus,
+textarea:focus {
   outline: none;
-  color: rgb(94,93,93);
+  color: rgb(237, 235, 240);
 }
 
-input:focus~label,
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label{
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
   position: absolute;
   top: -14px;
   font-size: 12px;
   color: #2196f3;
 }
-label{
+label {
   color: var(--colortextos);
   font-size: 16px;
   position: absolute;
@@ -555,17 +568,18 @@ label{
   transition: 0.5s ease all;
   pointer-events: none;
 }
-.barra{
+.barra {
   position: relative;
   display: block;
-  width:100% ;
+  width: 100%;
 }
-input:focus~.barra::before, textarea:focus~.barra::before{
+input:focus ~ .barra::before,
+textarea:focus ~ .barra::before {
   width: 100%;
 }
 
-.barra::before{
-  content: '';
+.barra::before {
+  content: "";
   height: 2px;
   width: 0;
   bottom: 0;
@@ -575,32 +589,35 @@ input:focus~.barra::before, textarea:focus~.barra::before{
   left: 0;
 }
 
-button{
-  background: red;
+button {
+  background: rgba(153, 0, 255, 0.534);
   display: block;
   width: 100px;
   height: 40px;
   border: none;
-  color:whitesmoke;
+  color: whitesmoke;
   border-radius: 4px;
   font-size: 16px;
   margin: 10px auto;
   cursor: pointer;
 }
+.card-contact{
+  justify-content:space-evenly;
+}
 /* font-family: 'Raleway', sans-serif; */
 
 @media (max-width: 768px) {
-  .logo{
+  .logo {
     flex-direction: column;
     align-self: flex-start;
   }
-  .logo h2{
+  .logo h2 {
     display: none;
   }
-  .logo img{
+  .logo img {
     align-self: flex-start;
   }
-  .container{
+  .container {
     flex-direction: column;
   }
   .container-hero {
@@ -642,68 +659,68 @@ button{
     text-align: center;
     font-size: 24px;
   }
-  .pain-point--paragrahp{
+  .pain-point--paragrahp {
     font-size: 15px;
   }
-  .about-me-histori{
+  .about-me-histori {
     max-width: 100%;
     align-items: center;
   }
-  .subtitle{
+  .subtitle {
     font-size: 30px;
   }
-  .card{
+  .card {
     margin-bottom: 30px;
   }
-  .article-container{
+  .article-container {
     padding: 10px;
   }
-  .article-container h3{
+  .article-container h3 {
     font-size: 20px;
   }
-  .article-container p{
+  .article-container p {
     font-size: 16px;
   }
   .article-container a {
     font-size: 15px;
-    display:block;
+    display: block;
   }
-  .article-container p{
-  margin-bottom: 20px;
+  .article-container p {
+    margin-bottom: 20px;
   }
- .logo-footer{
-  width: 30%;
-}
-.footer-brand{
-  justify-content: center;
-  margin: 60px;
-}
-.menu-footer{
-  align-items: center;
-  margin-bottom: 15px;
-}
-.legal{
-  align-items: center;
-}
-.contact{
-  margin: 0 auto;
+  .logo-footer {
+    width: 30%;
+  }
+  .footer-brand {
+    justify-content: center;
+    margin: 60px;
+  }
+  .menu-footer {
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .legal {
+    align-items: center;
+  }
+  .contact {
+    margin: 0 auto;
+  }
 }
 
+@media screen and (max-width: 910) {
+  form {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 650) {
+  form {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 450) {
+  form {
+    width: 80%;
+  }
 }
 
 
-@media screen and (max-width:910){
-  form{
-      width: 40%;
-  }
-}
-@media screen and (max-width:650){
-  form{
-      width: 60%;
-  }
-}
-@media screen and (max-width:450){
-  form{
-      width: 80%;
-  }
-}
