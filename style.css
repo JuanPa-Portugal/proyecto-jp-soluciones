@@ -51,8 +51,6 @@
   font-size: 18px;
   font-weight: bold;
   transition: 0.3s ease all;
-  transition: border-top-color 0.4s ease all;
-  transition: border-bottom-color 0.4s ease all;
 }
 .nav ul li a:hover{
   border: 1px solid;
@@ -588,7 +586,7 @@ label {
   transition: 0.5s ease all;
   pointer-events: none;
 }
-.barra {
+/* .barra {
   position: relative;
   display: block;
   width: 100%;
@@ -607,8 +605,7 @@ textarea:focus ~ .barra::before {
   background: linear-gradient(to right, #6a82fb, #fc5d7d);
   transition: 0.3s ease all;
   left: 0;
-}
-
+} */
 button {
   background: rgba(153, 0, 255, 0.534);
   display: block;
