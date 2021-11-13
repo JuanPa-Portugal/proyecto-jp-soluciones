@@ -443,17 +443,18 @@ footer {
 .info-contactos {
   display: flex;
   position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  color: white;
   width: 50%;
+  flex-direction: column;
+
+  color: white;
 }
 .text-contact {
+  padding: 0 10px;
+  line-height: 1.5;
   position: absolute;
-  left: 25%;
+  left: 0;
   top: 25%;
-  transform: translate(-25%, -25%);
+  transform: translate(0, -25%);
   width: 100%;
   text-align: center;
 }
@@ -468,13 +469,13 @@ footer {
 }
 .social-icons {
   position: absolute;
-  left: 50%;
-  top: 70%;
-  transform: translate(-50%, -70%);
+left: 50%;
+top: 70%;
+transform: translate(-50%,-70%);
 }
 .social-icons i {
   color: white;
-  margin: 20px;
+  margin: 15px;
   font-size: 25px;
 }
 .social-icons a :hover {
@@ -482,16 +483,17 @@ footer {
 }
 .form-container {
   display: flex;
-  width: 50%;
   justify-content: center;
+  align-items: center;
+  width: 50%;
   z-index: 1;
 }
-form {
+.form {
   background: rgba(6, 33, 59, 0.411);
   color: rgb(144, 136, 185);
   border-radius: 10px;
   box-shadow: 0 0 6px 0rgba (255, 255, 255, 0.8);
-  width: 50%;
+  width: 100%;
   padding: 10px 0;
 }
 .form h2 {
@@ -619,7 +621,6 @@ button {
   .card-content p {
     text-align: center;
   }
-
   /* contactos */
   .info-contactos {
     width: 100%;
@@ -627,9 +628,6 @@ button {
     top: -25%;
     left: 50%;
     transform: translate(-50%, 25%);
-  }
-  .text-contact{
-    margin: 0 20px;
   }
   .social-icons i {
     margin: 10px;
@@ -651,7 +649,7 @@ button {
     background: rgba(6, 33, 59, 0.623);
     width: 100%;
   }
-  .space{
+  .space {
     height: 500px;
   }
 }
@@ -659,7 +657,7 @@ button {
   .logo h2 {
     display: none;
   }
-  .form-container{
+  .form-container {
     width: 80%;
   }
   .logo img {
@@ -748,6 +746,16 @@ button {
   }
   .article-container p {
     margin-bottom: 20px;
+  }
+  /* page-contactos */
+  .info-contactos h1 {
+    font-size: 30px;
+  }
+  .social-icons {
+    text-align: center;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
   }
   /* footer-responsive */
   .logo-footer {
