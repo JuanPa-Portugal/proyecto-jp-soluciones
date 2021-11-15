@@ -107,6 +107,7 @@ background: linear-gradient(to right, #004e928c, hsla(234, 100%, 8%, 0.705)),url
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+  box-shadow: 1px 1px 20px -5px rgba(77, 41, 41, 0.918);
   transition: background-color 200ms ease-in;
 }
 .hero-btn:hover {
@@ -211,7 +212,7 @@ h3 {
   text-align: center;
   margin: auto;
   width: 90%;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
   padding: 10px 0;
   border-radius: 8px;
   font-size: 30px;
@@ -232,7 +233,6 @@ h3 {
   padding-bottom: 60px;
 }
 .card {
-  margin-top: 30px;
   color: #484f6b;
   width: 300px;
   position: relative;
@@ -292,10 +292,9 @@ h3 {
   transform: translate(-50%, -100%);
   text-align: center;
   font-size: 18px;
-  font-weight: bold;
+  font-weight:bold;
   text-decoration: none;
   padding: 8px;
-  font-size: 18px;
   background-color: #113399;
   color: rgb(245, 239, 239);
   border: 2px solid rgb(255, 253, 253);
@@ -545,6 +544,9 @@ button {
 }
 /* responsive-area */
 @media (max-width: 1140px) {
+  .container{
+    width: 90%;
+  }
   .nav {
     display: none;
   }
@@ -583,11 +585,13 @@ button {
     position: initial;
     opacity: 100%;
   }
-  .card-content h2 {
-    opacity: 0;
-  }
   .card-content p {
     text-align: center;
+  }
+  .card-btn{
+    left: 50%;
+    top: 95%;
+    transform: translate(-50, -95%);
   }
   /* contactos */
   .info-contactos {
@@ -623,6 +627,9 @@ button {
   }
 }
 @media (max-width: 768px) {
+  .container{
+    width: 95%;
+  }
   .logo h2 {
     display: none;
   }
@@ -686,8 +693,12 @@ button {
     height: 100%;
   }
   .card {
+    padding: 10px 0px;
     margin-bottom: 30px;
     box-shadow: 1px 1px 20px -1px #20202049;
+  }
+  .card:hover h3{
+    opacity: 100;
   }
   .card-content {
     position: initial;
@@ -698,6 +709,11 @@ button {
   }
   .card-content p {
     text-align: center;
+  }
+  .card-btn{
+    left: 50%;
+    top: 90%;
+    transform: translate(-50, -90%);
   }
   /* article-responsive */
   .article-container {
