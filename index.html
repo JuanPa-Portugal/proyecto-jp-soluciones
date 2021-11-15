@@ -5,14 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Juan Pablo Ayoroa portugal front end developer web designe">
   <meta name="description"
-    content="Sitios web para negocios de todos los tamaños, enfocados en la funcionaliad acompañado de un buen diseño, diseños realizados en codigo nativo o cms wordpress">
+    content="Sitios web para negocios de todos los tamaños, enfocados en la funcionalidad acompañado de un buen diseño, diseños realizados en codigo nativo o cms WordPress">
   <meta property="og:type" content="website">
-  <meta property="og:tytle" content="diseños web para tu emprendimiento">
+  <meta property="og:title" content="diseños web para tu emprendimiento">
   <meta property="og:description"
     content="Sitios web para negocios de todos los tamaños, enfocados en la funcionaliad acompañado de un buen diseño">
-  <meta property="og:image" content="https://jpsolucionesinformatica.com/img/brand-Jp-S-color.png">
+  <meta property="og:image" content="https://jp-solucionesi.netlify.app/img/JPIsotipoSinFondo.png">
   <script src="https://kit.fontawesome.com/3d09fa9176.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="img/favicon32(2).png" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
   <title>Diseños web para tu emprendimiento</title>
 </head>
@@ -21,7 +23,12 @@
   <header class="container-header">
     <div class="container">
       <div class="logo">
-        <img src="img/JPIsotipoSinFondo.png" alt="Branding jp soluciones informaticas" class="logo--branding" />
+        <picture >
+          <source media="(max-width:1100px )" srcset="/img/brandig-mid.png" class="logo--branding">
+          <source media="(max-width:765px )" srcset="img/Brand-JP-Soluciones-Informaticas" class="logo--branding">
+          <img src="img/JPIsotipoSinFondo.png" alt="logo jp soluciones informaticas" class="logo--branding">
+        </picture>
+        <!-- <img src="img/JPIsotipoSinFondo.png" alt="Branding jp soluciones informaticas" class="logo--branding" /> -->
 
       </div>
       <div class="nav">
@@ -42,14 +49,14 @@
       <div class="hero-info">
         <h1 class="hero--title">Sitios Web Para tu Negocio</h1>
         <p>
-          diseños basados en UX/UI, experimentando un
+          Diseños basados en UX/UI, experimentando un
           feedback constante durante el proceso, te crearé un sitio web
           adaptado a tus propuestas y totalmente responsive a cualquier
           pantalla
         </p>
         <p>
-          te invito a revisar mi portafolio en la cual te
-          muestro el paso a paso de lo que podria ser el stio web de tu emprendimiento
+          Te invito a revisar mi portafolio en la cual te
+          muestro el paso a paso de lo que podría ser el sitio web de tu emprendimiento
         </p>
         <a class="hero-btn" href="#">ver mi portafolio</a>
       </div>
@@ -99,7 +106,7 @@
           Front end Developer
         </h3>
         <p>
-          y más que dispuesto a ayudarte, creando una web que muestre tus
+          Y más que dispuesto a ayudarte, creando una web que muestre tus
           valores y reflejen lo que eres a tus clientes
         </p>
         <p>
@@ -107,11 +114,11 @@
           forme como técnico en soluciones integrales para pc y redes
         </p>
         <p>
-          con una amplia experiencia en optimización de computadoras de
+          Con una amplia experiencia en optimización de computadoras de
           escritorio y laptops y una pasión por el desarrollo web
         </p>
         <p>
-          quiero crear la web para tu emprendimiento y estoy dispuesto a
+          Quiero crear la web para tu emprendimiento y estoy dispuesto a
           asesorarte con cualquier duda que tengas
         </p>
         <div class="aboute-me-btn">
@@ -124,64 +131,64 @@
       Mira como puedo ayudarte
     </h3>
     <section class="container-card">
-      <div >
+      <div>
       </div>
-        <!--  card 1 -->
-        <div class="card c1">
-          <h3>
-            Servicios
-          </h3>
-          <div class="card--img">
-            <img src="img/img-service.jpeg" alt="Servicios">
-          </div>
-          <div class="card-content ">
-            <h2 >Servicios</h2>
-            <p>
-              ¿Te gustaría que trabajemos juntos? así es como puedo ayudarte a aumentar tus ventas y conseguir que tu
-              marca destaque en internet
-            </p>
-            <a class="card-btn" href="#">me interesa</a>
-          </div>
+      <!--  card 1 -->
+      <div class="card c1">
+        <h3>
+          Servicios
+        </h3>
+        <div class="card--img">
+          <img src="img/img-service.jpeg" alt="Servicios">
         </div>
-        <!--  card 2 -->
-        <div class="card ">
-          <h3>
-            Portafolio
-          </h3>
-          <div class="card--img">
-            <img class="card-img" src="img/portfolio.jpg" alt="portafolio">
-          </div>
-          <div class="card-content ">
-            <h2 class="card-title">Portafolio</h2>
-            <p>
-              Echale un vistazo a mis ultimos trabajos y descubre mi metodo de trabajo
-            </p>
-            <a class="card-btn" href="#">ver trabajos</a>
-          </div>
+        <div class="card-content ">
+          <h2>Servicios</h2>
+          <p>
+            ¿Te gustaría que trabajemos juntos? así es como puedo ayudarte a aumentar tus ventas y conseguir que tu
+            marca destaque en internet
+          </p>
+          <a class="card-btn" href="#">me interesa</a>
         </div>
-        <!--  card 3 -->
-        <div class="card">
-          <h3>
-            Blog
-          </h3>
-          <div class="card--img">
-            <img src="img/blog-social-media.jpg" alt="Blog">
-          </div>
-          <div class="card-content ">
-            <h2 class="card-title">Blog</h2>
-            <p>
-              ¿Te gustaria mejorar tu web y tu presencia online accede ahora a todo el contenido gratuito que comparto
-              cada semana en mi blog
-            </p>
-            <a class="card-btn" href="#">ingresar</a>
-          </div>
+      </div>
+      <!--  card 2 -->
+      <div class="card ">
+        <h3>
+          Portafolio
+        </h3>
+        <div class="card--img">
+          <img class="card-img" src="img/portfolio.jpg" alt="portafolio">
         </div>
+        <div class="card-content ">
+          <h2 class="card-title">Portafolio</h2>
+          <p>
+            Dales un vistazo a mis ultimos trabajos y descubre mi metodo de trabajo
+          </p>
+          <a class="card-btn" href="#">ver trabajos</a>
+        </div>
+      </div>
+      <!--  card 3 -->
+      <div class="card">
+        <h3>
+          Blog
+        </h3>
+        <div class="card--img">
+          <img src="img/blog-social-media.jpg" alt="Blog">
+        </div>
+        <div class="card-content ">
+          <h2 class="card-title">Blog</h2>
+          <p>
+            ¿Te gustaria mejorar tu web y tu presencia online accede ahora a todo el contenido gratuito que comparto
+            cada semana en mi blog
+          </p>
+          <a class="card-btn" href="#">ingresar</a>
+        </div>
+      </div>
     </section>
   </main>
   <article class="article">
     <div class="article-container">
       <h3>
-        ¿ ya tomaste la decision de darle a tu marca la web que necesita?
+        ¿ Ya tomaste la decision de darle a tu marca la web que necesita?
       </h3>
       <p>
         estas a un solo paso de lograrlo
@@ -195,7 +202,8 @@
   <footer>
     <div class="container">
       <div class="footer-brand">
-        <img src="img/Brand-JP-Soluciones-Informaticas.png" alt="branding jp soluciones informaticas" class="logo-footer" >
+        <img src="img/Brand-JP-Soluciones-Informaticas.png" alt="branding jp soluciones informaticas"
+          class="logo-footer">
       </div>
       <div class="menu-footer">
         <h4>
@@ -203,9 +211,9 @@
         </h4>
         <ul>
           <li><a href="/index.html">Inicio</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="/contacto.html">Contacto</a></li>
-            <li><a href="#">Blog</a></li>
+          <li><a href="#">Portafolio</a></li>
+          <li><a href="/contacto.html">Contacto</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </div>
       <div class="legal">
@@ -213,13 +221,13 @@
           Aspectos legales
         </h4>
         <ul>
-          <li> <a href="">
-           politicas de privacidad</a>
+          <li> <a href="#">
+              politicas de privacidad</a>
           </li>
-            
-          <li><a href=""> aviso legal</a>
+
+          <li><a href="#"> aviso legal</a>
           </li>
-          <li> <a href=""> politicas de cookies</a>
+          <li> <a href="#"> politicas de cookies</a>
           </li>
         </ul>
       </div>
@@ -228,8 +236,12 @@
           contactemos
         </h4>
         <div class="icons">
-          <img src="/img/bx-mail.svg" alt="icono mail">
-          <img src="/img/bxl-whatsapp.svg" alt="icono whatsapp">
+          <a href="mailto:pabloayoroa23@gmail.com" target="_blank">
+            <img src="/img/bx-mail.svg" alt="icono mail">
+          </a>
+          <a href="https://wa.me/5491150568584?text=Me interesa el producto que estás vendiendo" target="_blank">
+            <img src="/img/bxl-whatsapp.svg" alt="icono whatsapp">
+          </a>
         </div>
       </div>
     </div>
