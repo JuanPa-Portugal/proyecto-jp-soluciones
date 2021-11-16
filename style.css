@@ -16,6 +16,7 @@
   justify-content: space-between;
 }
 .container-header {
+  background-color: white;
   background-image: url(img/weave-nav.svg);
   background-size: cover;
 }
