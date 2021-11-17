@@ -31,18 +31,17 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.nav-container a {
-  height: 100px;
-}
 .nav-branding img {
   height: 100%;
   padding: 5px;
 }
 .nav-container a {
+  height: 100px;
   color: white;
   text-decoration: none;
   font-weight: 500;
   margin-right: 30px;
+  transition: all 200ms ease;
 }
 .nav-container a:hover {
   color: #2196f3;
@@ -105,9 +104,9 @@ header {
   margin-bottom: 30px;
 }
 .hero-info p {
-  color: rgb(189, 198, 236);
+  color: hsl(225, 6%, 86%);
   font-size: 18px;
-  font-weight: 400;
+  font-weight:400;
   margin-bottom: 20px;
 }
 .hero-btn {
@@ -116,7 +115,7 @@ header {
   width: 50%;
   text-decoration: none;
   color: rgb(245, 239, 239);
-  background-color: #113399;
+  background-color: hsl(225, 80%, 33%);
   padding: 8px;
   border: 2px solid white;
   border-radius: 5px;
@@ -127,7 +126,7 @@ header {
   transition: background-color 200ms ease-in;
 }
 .hero-btn:hover {
-  background-color: hsla(283, 62%, 47%, 0.644);
+  background-color: hsla(283, 62%, 47%, 0.643);
 }
 .pain-points {
   display: flex;
@@ -303,6 +302,7 @@ h3 {
 }
 .card-btn {
   position: absolute;
+  width: 80%;
   left: 50%;
   top: 100%;
   transform: translate(-50%, -100%);
@@ -404,9 +404,15 @@ footer {
   flex-direction: column;
   color: white;
 }
+
 .menu-footer a {
   text-decoration: none;
   color: white;
+  transition: all 200ms ease;
+}
+.menu-footer a:hover {
+  color: #00c6ff;
+
 }
 .menu-footer ul {
   list-style: none;
@@ -426,6 +432,10 @@ footer {
 .legal a {
   text-decoration: none;
   color: white;
+  transition: all 200ms ease;
+}
+.legal a:hover{
+  color: #00c6ff;
 }
 .legal ul {
   list-style: none;
@@ -440,6 +450,9 @@ footer {
   color: white;
   font-size: 20px;
   margin-bottom: 60px;
+}
+.contact a{
+  text-decoration: none;
 }
 .icons {
   margin: 20px;
@@ -484,6 +497,9 @@ footer {
   top: 70%;
   transform: translate(-100%, -70%);
   width: 100%;
+}
+.social-icons a{
+  text-decoration: none;
 }
 .social-icons i {
   color: white;
@@ -565,6 +581,11 @@ button {
   cursor: pointer;
 }
 /* responsive-area */
+@media (max-width: 1125px){
+  .container-card{
+    flex-direction: column;
+  }
+}
 @media (max-width: 1110px) {
   .container {
     width: 90%;
@@ -579,7 +600,7 @@ button {
   }
   .hero-info p {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
   }
   .hero-info h1 {
@@ -599,6 +620,9 @@ button {
   .card {
     margin-bottom: 30px;
     box-shadow: 1px 1px 20px -1px #20202049;
+  }
+  .card h3{
+    display: none;
   }
   .card-content {
     position: initial;
@@ -678,8 +702,9 @@ button {
   }
   .hero-info p {
     text-align: center;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
   }
   .hero-info h1 {
     text-align: center;
@@ -723,16 +748,12 @@ button {
     margin-bottom: 30px;
     box-shadow: 1px 1px 20px -1px #20202049;
   }
-  .card:hover h3 {
-    opacity: 100;
-  }
+  
   .card-content {
     position: initial;
     opacity: 100%;
   }
-  .card-content h2 {
-    opacity: 0;
-  }
+ 
   .card-content p {
     text-align: center;
   }
