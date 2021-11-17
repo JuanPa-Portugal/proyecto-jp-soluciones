@@ -18,27 +18,27 @@
   <link rel="stylesheet" href="style.css" />
   <title>Diseños web para tu emprendimiento</title>
 </head>
+
 <body class="container-all">
-  <header class="container-header sticky-top">
-    <div class="container">
-      <div class="logo">
-        <picture >
-          <source media="(max-width:1100px )" srcset="img/branding-mid.png" class="logo--branding">
-          <source media="(max-width:765px )" srcset="img/branding-small.png" class="logo--branding">
-          <img src="img/JPIsotipoSinFondo.png" alt="logo jp soluciones informaticas" class="logo--branding">
+  <header>
+    <nav class="container nav-container">
+      <a href="/index.html">
+        <picture class="nav-branding">
+          <source media="(max-width:1100px )" srcset="img/branding-mid.png">
+          <source media="(max-width:765px )" srcset="img/branding-small.png">
+          <img src="img/JPIsotipoSinFondo.png" alt="logo jp soluciones informaticas">
         </picture>
+      </a>
+      <div class="enlaces">
+        <a href="index.html">Inicio</a>
+        <a href="#">Portafolio</a>
+        <a href="contacto.html">Contactos</li>
+        <a href="#">Blog</a>
       </div>
-      <div class="nav">
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html" class="select">Inicio</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </nav>
+      <div class="hamburguesa">
+        <img src="img/menu-hamburger.svg" id="hamburguesa">
       </div>
-    </div>
+    </nav>
   </header>
   <section class="container-hero">
     <img src="img/weave-heros.svg" alt="" class="weave-hero">
@@ -99,7 +99,7 @@
           Mi nombre es Juan Pablo Ayoroa
         </h2>
         <h3>
-          Front end Developer
+          Diseñador Web Front End
         </h3>
         <p>
           Y más que dispuesto a ayudarte, creando una web que muestre tus
@@ -196,7 +196,7 @@
     </div>
   </article>
   <footer>
-    <div class="container">
+    <div class="container footer-content">
       <div class="footer-brand">
         <img src="img/Brand-JP-Soluciones-Informaticas.png" alt="branding jp soluciones informaticas"
           class="logo-footer">
@@ -242,7 +242,8 @@
     </div>
     <p class="copy">toodos los derechos reservados | jpsolucionesinformaticas | 2021</p>
   </footer>
-  
+
+  <script src="main.js"></script>
 </body>
 
 </html>

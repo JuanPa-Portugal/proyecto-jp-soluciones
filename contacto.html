@@ -14,86 +14,91 @@
     content="Sitios web para negocios de todos los tamaños, enfocados en la funcionaliad acompañado de un buen diseño">
   <meta property="og:image" content="https://jp-solucionesi.netlify.app/img/JPIsotipoSinFondo.png">
   <script src="https://kit.fontawesome.com/3d09fa9176.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="img/favicon32(2).png" type="image/x-icon"> 
+  <link rel="shortcut icon" href="img/favicon32(2).png" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
   <title>Contactemos</title>
 </head>
 
 <body>
-  <header class="container-header">
-    <div class="container">
-      <div class="logo">
-        <img src="img/JPIsotipoSinFondo.png" alt="Branding jp soluciones informaticas" class="logo--branding" />
+  <header>
+    <nav class="container nav-container">
+      <a href="">
+
+        <picture class="nav-branding">
+          <source media="(max-width:1100px )" srcset="img/branding-mid.png">
+          <source media="(max-width:765px )" srcset="img/branding-small.png">
+          <img src="img/JPIsotipoSinFondo.png" alt="logo jp soluciones informaticas">
+        </picture>
+      </a>
+
+      <div class="enlaces">
+        <a href="index.html">Inicio</a>
+        <a href="#">Portafolio</a>
+        <a href="contacto.html">Contactos</a>
+        <a href="#">Blog</a>
       </div>
-      <div class="nav">
-        <nav>
-          <ul class="menu">
-            <li><a href="/index.html" class="select">Inicio</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </nav>
+      <div class="hamburguesa">
+        <img src="img/menu-hamburger.svg" id="hamburguesa">
       </div>
-    </div>
+    </nav>
   </header>
   <main>
 
   </main>
   <section class="container-hero">
-
-    <div class="info-contactos">
-      <div class="text-contact">
-        <p>Necesitas ayuda</p>
-        <h3>Mi nombre es Juan Pablo y estoy para resolver cualquier inquietud y ayudarte a tomar las mejores
-          desiciones para tu emprendimiento</h3>
-        <h1>Contacta conmigo</h1>
-      </div>
-      <div class="social-icons">
-        <a href="">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-
-        <a href="#">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </div>
-    </div>
-    <img src="img/weave-heros.svg" alt="" class="weave-hero">
-    <!-- form -->
-    <div class="form-container">
-      <form action="https://formspree.io/f/mjvjnwkq" method="POST">
-        <div class="form">
-          <h2>Formulario de contacto</h2>
-          <div class="grupo">
-            <input type="text" name="name" id="username" required>
-            <label for="username">Nombre</label>
-          </div>
-          <div class="grupo">
-            <input type="email" name="_replyto" id="email" required>
-            <label for="email">Email</label>
-          </div>
-          <div class="grupo">
-            <textarea name="message" id="text" rows="3" required></textarea>
-            <label for="text">Deja tu mensaje</label>
-          </div>
-          <button type="submit">contactar</button>
+    <div class="container contact-content">
+      <div class="info-contactos">
+        <div class="text-contact">
+          <p><span>¿ Necesitas ayuda ?</span></p>
+          <p>Mi nombre es Juan Pablo y estoy para resolver cualquier inquietud y ayudarte a tomar las mejores
+            desiciones para tu emprendimiento</p>
+          <h1>Contacta conmigo</h1>
         </div>
-      </form>
+        <div class="social-icons">
+          <a href="">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="form-container">
+        <form action="https://formspree.io/f/mjvjnwkq" method="POST">
+          <div class="form">
+            <h2>Formulario de contacto</h2>
+            <div class="grupo">
+              <input type="text" name="name" id="username" required>
+              <label for="username">Nombre</label>
+            </div>
+            <div class="grupo">
+              <input type="email" name="_replyto" id="email" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="grupo">
+              <textarea name="message" id="text" rows="3" required></textarea>
+              <label for="text">Deja tu mensaje</label>
+            </div>
+            <button type="submit">contactar</button>
+          </div>
+        </form>
+      </div>
     </div>
-    </div>
+    <!-- form -->
+    <img src="img/weave-heros.svg" alt="" class="weave-hero">
   </section>
   </main>
   <div class="space"></div>
   <!-- footer-->
   <footer>
-    <div class="container">
+    <div class="container footer-content">
       <div class="footer-brand">
         <img src="img/Brand-JP-Soluciones-Informaticas.png" alt="branding jp soluciones informaticas"
           class="logo-footer">
@@ -133,13 +138,15 @@
             <img src="/img/bx-mail.svg" alt="icono mail">
           </a>
           <a href="https://wa.me/5491150568584?text=Me interesa el producto que estás vendiendo" target="_blank">
-            <img src="/img/bxl-whatsapp.svg"  alt="icono whatsapp">
+            <img src="/img/bxl-whatsapp.svg" alt="icono whatsapp">
           </a>
         </div>
       </div>
     </div>
     <p class="copy">toodos los derechos reservados | jpsolucionesinformaticas | 2021</p>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
