@@ -5,6 +5,9 @@
   margin: 0;
   font-family: "Raleway", sans-serif;
 }
+.font{
+  background-color: white;
+}
 .container {
   width: 80%;
   padding: 10px;
@@ -41,10 +44,17 @@ header {
   text-decoration: none;
   font-weight: 500;
   margin-right: 30px;
-  transition: all 200ms ease;
+  transition: all 300ms ease-in;
 }
+
 .nav-container a:hover {
   color: #2196f3;
+  border: 1px solid;
+  padding: 10px 30px;
+  border-top-color: #2196f3;
+  border-bottom-color: #2196f3;
+  border-left: none;
+  border-right: none;
 }
 .hamburguesa {
   height: 100%;
@@ -66,20 +76,10 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-top: 100px;
-  height: 600px;
+  height:90vh;
   position: relative;
   border-top: 1px solid white;
   background-image: url(img/deco-bg.jpeg);
- 
-/*   background: hsla(234, 100%, 8%, 0.65); 
-  background: -webkit-linear-gradient(
-      to right,
-      #004e928c,
-      hsla(234, 100%, 8%, 0.705)
-    ),
-    url(img/deco-bg.jpeg); 
-  background: linear-gradient(to right, #004e928c, hsla(234, 100%, 8%, 0.705)),
-    url(img/deco-bg.jpeg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -347,6 +347,7 @@ h3 {
   background: #00c6ff;
   background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
   background: linear-gradient(to right, #0072ff, #00c6ff);
+  margin-bottom: 209px;
 }
 .article-container h3 {
   padding: 10px;
@@ -386,6 +387,10 @@ h3 {
 }
 /* footer */
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -100;
   background: rgb(32, 66, 131);
 }
 .footer-content {
@@ -580,6 +585,67 @@ button {
   margin: 10px auto;
   cursor: pointer;
 }
+/* SECTION CARDS CONTACT */
+.contact-cards{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.contact-cards h3{
+  font-size: 34px;
+  font-weight:700;
+  color: #1f2744;
+  margin-bottom: 30px;
+}
+.contact-cards--container{
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 220px;
+ 
+}
+.contact-cards--container svg{
+  width: 40px;
+  height: 40px;
+  fill: #113399;
+}
+.card-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 100%;
+  padding: 10px;
+  box-shadow: 1px 1px 20px -1px #20202049;
+}
+.card-contact p{
+  font-size: 18px;
+  font-weight: 300;
+}
+.card-contact--option{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.card-contact--option h4{
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 10px;
+  color: #1f2744;
+}
+.card-contact--option p{
+  margin-left: 50px;
+  
+}
+.card-contact--option.cash svg{
+  width: 100px;
+  height: 100px;
+
+}
 /* responsive-area */
 @media (max-width: 1125px){
   .container-card{
@@ -658,8 +724,24 @@ button {
     background: rgba(6, 33, 59, 0.623);
     width: 100%;
   }
-  .space {
-    height: 500px;
+  .contact-cards {
+    margin-top: 400px;
+  }
+  .contact-cards h3{
+    text-align: center;
+  }
+  .contact-cards--container{
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  .card-contact--option{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .card-contact--option p{
+    margin-left: 0;
   }
 }
 @media (max-width: 768px) {
