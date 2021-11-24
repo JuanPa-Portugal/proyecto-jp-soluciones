@@ -1,3 +1,4 @@
+
 let abierto = false;
 const enlaces = document.getElementsByClassName("enlaces")[0];
 const hamburguesa = document.getElementsByClassName("hamburguesa")[0];
