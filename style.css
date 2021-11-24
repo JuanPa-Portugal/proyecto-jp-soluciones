@@ -5,7 +5,7 @@
   margin: 0;
   font-family: "Raleway", sans-serif;
 }
-.font{
+.font {
   background-color: white;
 }
 .container {
@@ -51,7 +51,7 @@ header {
 .enlaces a:hover {
   color: #2196f3;
   padding: 10px 0;
-  border-top:2px solid #2196f3;
+  border-top: 2px solid #2196f3;
   border-bottom: 2px solid #2196f3;
 }
 .hamburguesa {
@@ -74,7 +74,7 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-top: 100px;
-  height:90vh;
+  height: 90vh;
   position: relative;
   border-top: 1px solid white;
   background-image: url(img/deco-bg.jpeg);
@@ -104,7 +104,7 @@ header {
 .hero-info p {
   color: hsl(225, 6%, 86%);
   font-size: 18px;
-  font-weight:400;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 .hero-btn {
@@ -415,7 +415,6 @@ footer {
 }
 .menu-footer a:hover {
   color: #00c6ff;
-
 }
 .menu-footer ul {
   list-style: none;
@@ -437,7 +436,7 @@ footer {
   color: white;
   transition: all 200ms ease;
 }
-.legal a:hover{
+.legal a:hover {
   color: #00c6ff;
 }
 .legal ul {
@@ -454,7 +453,7 @@ footer {
   font-size: 20px;
   margin-bottom: 60px;
 }
-.contact a{
+.contact a {
   text-decoration: none;
 }
 .icons {
@@ -501,7 +500,7 @@ footer {
   transform: translate(-100%, -70%);
   width: 100%;
 }
-.social-icons a{
+.social-icons a {
   text-decoration: none;
 }
 .social-icons i {
@@ -584,32 +583,32 @@ button {
   cursor: pointer;
 }
 /* SECTION CARDS CONTACT */
-.contact-cards{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-bottom: 200px;
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
 }
-.contact-cards h3{
+.contact-cards h3 {
   font-size: 34px;
-  font-weight:700;
+  font-weight: 700;
   color: #1f2744;
   margin-bottom: 30px;
 }
-.contact-cards--container{
+.contact-cards--container {
   display: flex;
   height: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 220px;
 }
-.contact-cards--container svg{
+.contact-cards--container svg {
   width: 40px;
   height: 40px;
   fill: #113399;
 }
-.card-contact{
+.card-contact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -620,35 +619,59 @@ margin-bottom: 200px;
   border-radius: 5px;
   box-shadow: 1px 1px 20px -1px #20202049;
 }
-.card-contact p{
+.card-contact p {
   font-size: 18px;
   font-weight: 300;
 }
-.card-contact--option{
+.card-contact--option {
   display: flex;
   align-items: center;
   width: 100%;
   padding: 10px;
 }
-.card-contact--option h4{
+.card-contact--option h4 {
   font-size: 25px;
   font-weight: 700;
   text-align: center;
   margin-left: 10px;
   color: #1f2744;
 }
-.card-contact--option p{
+.card-contact--option p {
   margin-left: 50px;
-  
 }
-.card-contact--option.cash svg{
+.card-contact--option.cash svg {
   width: 100px;
   height: 100px;
-
 }
+/* Style-Service */
+.container-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 300px;
+  background-image: url(/img/rocket-500.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.info--title h3 {
+  font-size: 45px;
+  color: #1f2744;
+  padding-right: 15%;
+  margin-bottom: 0;
+}
+.info--paragrahp {
+  display: flex;
+  max-height: 100%;
+  color: #484f6b;
+  font-size: 18px;
+  font-weight: 400;
+  align-items: flex-end;
+}
+
 /* responsive-area */
-@media (max-width: 1125px){
-  .container-card{
+@media (max-width: 1125px) {
+  .container-card {
     flex-direction: column;
   }
 }
@@ -687,7 +710,7 @@ margin-bottom: 200px;
     margin-bottom: 30px;
     box-shadow: 1px 1px 20px -1px #20202049;
   }
-  .card h3{
+  .card h3 {
     display: none;
   }
   .card-content {
@@ -727,20 +750,20 @@ margin-bottom: 200px;
   .contact-cards {
     margin-top: 400px;
   }
-  .contact-cards h3{
+  .contact-cards h3 {
     text-align: center;
   }
-  .contact-cards--container{
+  .contact-cards--container {
     flex-direction: column;
     gap: 25px;
     align-items: center;
   }
-  .card-contact--option{
+  .card-contact--option {
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
-  .card-contact--option p{
+  .card-contact--option p {
     margin-left: 0;
   }
 }
@@ -830,12 +853,12 @@ margin-bottom: 200px;
     margin-bottom: 30px;
     box-shadow: 1px 1px 20px -1px #20202049;
   }
-  
+
   .card-content {
     position: initial;
     opacity: 100%;
   }
- 
+
   .card-content p {
     text-align: center;
   }
