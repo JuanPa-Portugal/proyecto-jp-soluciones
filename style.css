@@ -5,6 +5,11 @@
   margin: 0;
   font-family: "Raleway", sans-serif;
 }
+.paragrahp{
+  font-size: 18px;
+  font-weight: 400;
+  color: #484f6b;
+}
 .font {
   background-color: white;
 }
@@ -224,7 +229,7 @@ h3 {
   text-align: center;
   margin: auto;
   width: 90%;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   padding: 10px 0;
   border-radius: 8px;
   font-size: 30px;
@@ -232,7 +237,7 @@ h3 {
   color: rgb(224, 220, 220);
   background: #1488cc;
   background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
-  background: linear-gradient(to right, #2b32b2, #1488cc);
+  background: linear-gradient(to right, #2150bd, #2065a5);
 }
 /* cards section */
 .container-card {
@@ -617,6 +622,7 @@ button {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 1px 1px 20px -1px #20202049;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #d7deff 100%);
 }
 .card-contact p {
   font-size: 18px;
@@ -643,10 +649,22 @@ button {
   height: 100px;
 }
 /* section-servicio y caracteristcas */
-
+.service{
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.418);
+  margin-bottom: 30px;
+}
+.service-content{
+  position: relative;
+  padding:10px;
+  width: 50%;
+  margin: 0 5px;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #d7deff 100%);
+  box-shadow: 1px 1px 20px -5px rgba(41, 48, 77, 0.993);
+}
 .container-info {
   display: flex;
-  gap: 10%;
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 60px;
@@ -670,12 +688,10 @@ button {
   width: 50%;
   margin-bottom: 20px;
 }
-.service{
-  margin-bottom: 240px;
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.418);
-}
+
 .container-service-point{
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
   justify-content: space-around;
   gap: 20%;
@@ -688,7 +704,6 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
-  gap: 20%;
 }
 .service--icons{
   width: 100%;
@@ -696,7 +711,31 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  
+}
+.service--icons img{
+  max-width: 350px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.btn-service{
+  position: absolute;
+  left:50%;
+  top: 100%;
+  transform: translate(-50%, -100%);
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px;
+  background-color: #113399;
+  color: rgb(245, 239, 239);
+  border: 2px solid rgb(255, 253, 253);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px -5px rgba(0, 0, 0, 0.418);
+  transition: background-color 200ms ease-in;
+}
+.btn-service:hover{
+  background-color: hsla(283, 62%, 47%, 0.918);
 }
 
 
@@ -756,6 +795,9 @@ button {
     top: 95%;
     transform: translate(-50, -95%);
   }
+  .article-container{
+    margin-bottom: 700px;
+  }
   /* contactos */
   .info-contactos {
     width: 100%;
@@ -797,7 +839,30 @@ button {
   .card-contact--option p {
     margin-left: 0;
   }
+  /* pagina servicios */
+  .service{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-info{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .info--paragrahp{
+    align-items: center;
+  }
+  .info--paragrahp p{
+    text-align: center;
+  }
+  .service-content{
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
+
+
 @media (max-width: 768px) {
   .hamburguesa {
     display: block;
