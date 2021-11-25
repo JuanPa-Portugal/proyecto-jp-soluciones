@@ -147,7 +147,6 @@ header {
 .pain-point--paragrahp div {
   display: flex;
   margin-bottom: 15px;
-  justify-content: center;
   align-items: center;
 }
 .pain-point--paragrahp i {
@@ -643,31 +642,63 @@ button {
   width: 100px;
   height: 100px;
 }
-/* Style-Service */
+/* section-servicio y caracteristcas */
+
 .container-info {
   display: flex;
-  justify-content: space-around;
+  gap: 10%;
   margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
   height: 300px;
-  background-image: url(/img/rocket-500.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  padding: 10px;
 }
 .info--title h3 {
   font-size: 45px;
   color: #1f2744;
-  padding-right: 15%;
-  margin-bottom: 0;
+  padding-right: 25%;
+
 }
 .info--paragrahp {
   display: flex;
-  max-height: 100%;
+  flex-direction: column;
   color: #484f6b;
   font-size: 18px;
   font-weight: 400;
-  align-items: flex-end;
 }
+.info--paragrahp img{
+  width: 50%;
+  margin-bottom: 20px;
+}
+.service{
+  margin-bottom: 240px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.418);
+}
+.container-service-point{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  gap: 20%;
+  }
+  .container-service-point div{
+    padding: 10px;
+  }
+.container-service{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 20%;
+}
+.service--icons{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
 
 /* responsive-area */
 @media (max-width: 1125px) {
