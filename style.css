@@ -90,8 +90,8 @@ header {
   position: relative;
   border-top: 1px solid white;
   background: #0000009f;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, hsla(0, 0%, 3%, 0.616), #00000086),url(img/deco-bg.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, hsla(0, 0%, 3%, 0.376), #000000a2),url(img/deco-bg.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, hsla(0, 0%, 3%, 0.616), #00000086),url(img/deco-bg-web.webp);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, hsla(0, 0%, 3%, 0.376), #000000a2),url(img/deco-bg-web.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
   background-size: cover;
   background-repeat: no-repeat;
