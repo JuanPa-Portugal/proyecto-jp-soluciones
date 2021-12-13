@@ -1,13 +1,13 @@
 
 let abierto = false;
 const enlaces = document.getElementsByClassName("enlaces")[0];
-const hamburguesa = document.getElementsByClassName("hamburguesa")[0];
-const menuHamburguesa = document.getElementById("hamburguesa");
+const menuResponsive = document.getElementsByClassName("menu-responsive")[0];
+const iconResponsive = document.getElementById("menu-responsive");
 const toggleMenu = () =>{
     enlaces.classList.toggle("enlaces2");
     enlaces.style.transition = "transform 0.5s ease-in-out"
 }
-hamburguesa.addEventListener("click", function(){
+menuResponsive.addEventListener("click", function(){
     toggleMenu();
     if(document.querySelector(".enlaces.enlaces2")){
         abierto = true;
@@ -18,7 +18,7 @@ hamburguesa.addEventListener("click", function(){
 window.addEventListener("click", function(e){
     this.console.log(e.target)
     if(abierto == true){
-        if(e.target !== menuHamburguesa){
+        if(e.target !== iconResponsive){
             toggleMenu();
             abierto = false;
         }

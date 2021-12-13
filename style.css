@@ -53,19 +53,26 @@ header {
   border-bottom: 2px solid transparent;
   transition: 0.4s ease-out;
 }
+/* .active{
+  background-color: #0c11423b;
+  padding: 10px 5px;
+  border-radius: 8px;
+} */
 .enlaces a:hover {
+  background-color:transparent;
+  border-radius: 0%;
   color: #2196f3;
   padding: 10px 0;
   border-top: 2px solid #2196f3;
   border-bottom: 2px solid #2196f3;
 }
-.hamburguesa {
+.menu-responsive {
   height: 100%;
   width: 100px;
   text-align: center;
   display: none;
 }
-.hamburguesa img {
+.menu-responsive img {
   vertical-align: top;
   padding: 23px;
 }
@@ -82,7 +89,10 @@ header {
   height: 90vh;
   position: relative;
   border-top: 1px solid white;
-  background-image: url(img/deco-bg.jpeg);
+  background: #0000009f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, hsla(0, 0%, 3%, 0.616), #00000086);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, hsla(0, 0%, 3%, 0.376), #000000a2),url(img/deco-bg.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -523,8 +533,7 @@ footer {
   z-index: 1;
 }
 .form {
-  background: rgba(6, 33, 59, 0.411);
-  color: rgb(144, 136, 185);
+  background: rgba(6, 33, 59, 0.726);
   border-radius: 10px;
   box-shadow: 0 0 6px 0rgba (255, 255, 255, 0.8);
   width: 100%;
@@ -592,7 +601,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 210px;
 }
 .contact-cards h3 {
   font-size: 34px;
@@ -605,7 +614,7 @@ button {
   height: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 220px;
+  margin-bottom: 50px;
 }
 .contact-cards--container svg {
   width: 40px;
@@ -650,13 +659,16 @@ button {
 }
 /* section-servicio y caracteristcas */
 .service{
+  height: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.418);
   margin-bottom: 30px;
 }
 .service-content{
-  position: relative;
+  display: flex;
+  flex-direction:column;
   padding:10px;
   width: 50%;
   margin: 0 5px;
@@ -694,7 +706,7 @@ button {
   flex-direction: column;
   margin: 0 auto;
   justify-content: space-around;
-  gap: 20%;
+ 
   }
   .container-service-point div{
     padding: 10px;
@@ -719,10 +731,7 @@ button {
   margin-bottom: 20px;
 }
 .btn-service{
-  position: absolute;
-  left:50%;
-  top: 100%;
-  transform: translate(-50%, -100%);
+ align-self: center;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
@@ -864,7 +873,7 @@ button {
 
 
 @media (max-width: 768px) {
-  .hamburguesa {
+  .menu-responsive {
     display: block;
   }
   .enlaces {
@@ -891,7 +900,7 @@ button {
   .nav-container a {
     height: 90px;
   }
-  .hamburguesa:hover img {
+  .menu-responsive:hover img {
     border-radius: 50%;
   }
   .enlaces a:hover {
